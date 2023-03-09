@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 5</title>
+</head>
+
+<style>
+    *{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    body{
+        margin: 0;
+    }
+    .home-page{
+        display: grid;
+        grid-template-columns: 150px 500px 150px;
+        justify-content: space-between;
+        padding-top: 240px;
+    }
+    .name{
+        text-align: center;
+    }
+    .parent{
+        background-color: rgb(31, 30, 30);
+        width: 100%;
+        height: 100vh;
+        border-bottom: solid 2px gray;
+    }
+    .cloud1{
+        padding-left: 350px;
+        padding-top: 60px;
+    }
+    .cloud2{
+        float: right;
+        margin-right: 400px;
+        margin-top: -70px;
+    }
+
+    .parent2{
+        background-color: rgb(31, 30, 30);
+        height: 100vh;
+        margin: 0;
+        border-bottom: solid 1px gray;
+    }
+    .profile{
+        width: 300px;
+    }
+    .profile-container{
+        display: block;
+        text-align: center;
+        padding-top: 200px;
+    }
+    .introduction{
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 70px;
+    }
+
+    .parent3{
+        height: 100vh;
+        background-color: rgb(31, 30, 30);
+    }
+    .icon1{
+        height: 130px;
+    }
+    .first-skill{
+        display: grid;
+        grid-template-columns: 100px 650px;
+        gap: 60px;
+        color: white;
+        margin-left: 300px;
+    }
+    .icon2{
+        height: 130px;
+    }
+    .second-skill{
+        display: grid;
+        grid-template-columns: 607px 100px;
+        gap: 30px;
+        justify-content: end;
+        margin-right: 300px;
+        color: white;
+        margin-top: 30px;
+    }
+    .icon3{
+        height: 130px;
+    }
+    .third-skill{
+        display: grid;
+        grid-template-columns: 100px 640px;
+        gap: 60px;
+        margin-left: 300px;
+        margin-top: 30px;
+    }
+    .nav-bar{
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        background-color: rgb(51, 153, 248);
+        border-bottom: solid 1px gray;
+        box-shadow: 0 0 10px 0 white;
+        padding-right: 40px;
+        padding-left: 40px;
+        position: fixed;
+    }
+    ul{
+        float: right;
+    }
+    ul li,a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 1px 10px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    a:hover{
+        text-decoration: underline red;
+        text-underline-offset: 5px;
+    }
+    .footer{
+        height: 300px;
+        background-color: rgb(20, 20, 20);
+        border-top: solid 1px gray;
+        padding-top: 40px;
+    }
+    .facebook:hover{
+        text-decoration: underline red;
+        cursor: pointer;
+    }
+    .instagram:hover{
+        text-decoration: underline red;
+        cursor: pointer;
+    }
+    ::placeholder{
+        color: gray;
+        text-align: center;
+        padding-top: 8px;
+    }
+    .facebook{
+        font-size: 15px;
+        margin: 15px 0 0 0;
+    }
+    .instagram{
+        font-size: 17px;
+        margin: 15px 0 0 0;
+    }
+</style>
+
+<body>
+    
+    <div class="nav-bar">
+        <nav>
+            <img style="width: 50px; height: 50px; display: inline-block; float: left; margin: 5px 0 5px 0; border-radius: 25px;" src="thumbnails/dog.webp" alt="">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div  class="parent">
+        <section id="Home"></section>
+            <div class="home-page">
+                <div  class="cloud1"><img src="thumbnails/cloud.png" alt="cloud"></div>
+                    <div class="name"><h1 style="margin-bottom: 0; color: red; font-size: 40px; border: solid 1px white; border-radius: 20px;">Jay Fernando</h1>
+                        <p style="margin-top: 5px; color: white;">BSIT student | Editor</p>
+                    </div>
+                <div><img class="cloud2" src="thumbnails/cloud.png" alt="cloud"></div><br>
+            </div>
+        <div style="text-align: center; margin-top: 98px;"><img style="height:500px; max-width: fit-content;" src="thumbnails/mountain.png" alt="mountain"></div>
+    </div>
+
+    <!---------------second layer--------------->
+
+    <div class="parent2">
+        <section id="About"></section>
+        <div class="profile-container"><img class="profile" src="thumbnails/me.jpg" alt=""></div>
+        <div class="introduction"><h1 style="color: white; margin: 0;">Hey There!</h1>
+            <p style="color: white;">I'm an 2nd Year BSIT student at Guagua National College (GNC)</p>
+        </div>
+    </div>
+
+    <!----------------third layer---------------->
+
+    <div class="parent3">
+        <section id="Skills"></section>
+        <div style="text-align: center; justify-content: center;"><h1 style="margin-top: 0; color: rgb(51, 153, 248); margin-bottom: 140px;
+            padding-top: 80px; font-size: 60px; text-decoration: underline 5px rgb(135, 55, 240); text-underline-offset: 10px;">Skills</h1>
+        </div> 
+        <div class="first-skill">
+            <div >
+                <img class="icon1" src="thumbnails/icon.png" alt="">
+            </div>
+            <div><h2 style="color: rgb(0, 132, 255); margin: 0 0 10px 0;">Photo Editing</h2><p>I like editing Photo's, not skilled but I know the basic editing.
+                I do sometimes making sales<br>banner for my friends business and sometimes Gaming banner. <p>⭐⭐⭐⭐⭐</p> </p>
+            </div>
+        </div>
+        <div class="second-skill">
+            <div><h2 style="color: rgb(0, 132, 255); text-align: right; margin: 0 0 10px 0;">Web Dev</h2> I do love Web Developing, so I'm currently studying HTML and CSS for 2
+                 months now.<br>and
+                 very soon I might start studying about JavaScript. <p style="text-align: right;">⭐⭐⭐⭐⭐</p> </div>
+            <div><img class="icon2" src="thumbnails/icon.png" alt=""></div>
+        </div>
+        <div class="third-skill">
+            <div><img class="icon3" src="thumbnails/icon.png" alt=""></div>
+            <div><h2 style="color: rgb(0, 132, 255); margin: 0 0 10px 0;">Video Editing</h2><p style="color: white;">I also love Video editing like montage, short clips,
+                and sometimes when we have video presentation activity in our class Im the one who editing our videos. <p><p>⭐⭐⭐⭐⭐</p></p>
+            </p></div>
+        </div>
+        <div class="second-skill">
+            <div><h2 style="color: rgb(0, 132, 255); text-align: right; margin: 0 0 10px 0;">Tech</h2> <p>Wayback 2021, one of our instructor taught us on how to build
+                a personal computer and how to troubleshoot your pc components when you're experiencing some errors.</p>
+            <p style="text-align: right; margin-bottom: 70px; margin-top: 0;">⭐⭐⭐⭐⭐</p> </div>
+            <div><img class="icon2" src="thumbnails/icon.png" alt=""></div>
+        </div>
+
+        <!------------------Footer layer------------------>
+
+        <footer class="footer">
+            <section id="Contact"></section>
+            <div style="display: grid; grid-template-columns: 150px 150px; justify-content: center; color: white;">
+                <div style="display: grid; grid-template-columns: 50px 100px;"><img src="thumbnails/icons8-facebook-48.png" alt="facebook"><a 
+                    href="https://www.facebook.com/profile.php?id=100009836075204" target="_blank"><p class="facebook">@Doc Jay</p></a></div>
+                <div style="display: grid; grid-template-columns: 50px 100px;"><img src="thumbnails/icons8-instagram-48.png" alt="instagram"><a 
+                    href="https://www.instagram.com/itsdjfrnndo/"target="_blank"><p class="instagram">@itsdjfrnndo</p></a></div>
+            </div>
+            <form style="text-align: center; margin-top: 50px;">
+                <tr>
+                    <td>
+                        <textarea name="message" id="" cols="50" rows="2" placeholder="Message Me"></textarea>
+                    </td>
+                </tr><br>
+                <tr>
+                    <td>
+                        <button style="border: none; cursor: pointer;">Send</button>
+                        <button style="border: none; cursor: pointer;">Reset</button>
+                    </td>
+                </tr>
+            </form>
+            <div style="text-align: center; opacity: .5; margin-top: 100px;">
+                <p style="color: white; font-family: Arial, Helvetica, sans-serif !important; font-weight: lighter;">© No Copyright Infringement
+                    Intended! I worked hard for this activity so back off!!</p> 
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
